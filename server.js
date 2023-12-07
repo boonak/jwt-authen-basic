@@ -9,13 +9,13 @@ app.use(express.json())
 
 var posts = [
     {
-    username: "Boon",
-    title: "Post 1"
+        username: "Boon",
+        title: "Post 1"
     },
     {
         username: "Brown",
         title: "Post 2"
-        },
+    },
 ]
 
 app.get('/posts',authenticateToken, (req,res) => {
